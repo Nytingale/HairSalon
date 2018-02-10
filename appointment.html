@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Set Appointment</title>
+</head>
+<html>
+	<div id="container_div">
+		<div id="header_div">
+			<h1 id="business_h1">Aurora Salon and Spa</h1>
+		</div>
+		<div id="sidebar_div">
+			<ul id="menu_ul">
+				<li><a href="index.html">      Home       </a></li>
+				<li><a href="services.html">   Services   </a></li>
+				<li><a href="appointment.html">Appointment</a></li>
+			</ul>
+		</div>
+		<div id="content_div">
+			<form action="mailto:bookings@aurorasalonspa.com" method="POST" enctype="text/plain">
+				First Name: <input type="text" name="fname"><br>
+				Last Name: <input type="text" name="lname"><br>
+				Time: <input type="datetime-local" name="apttime"><br>
+				Select Service:
+				<select name="services">
+					<option value="Services">Services</option>
+					<option value="Service#1">Hand and Foot Care</option>
+					<option value="Service#2">Spa Packages</option>
+					<option value="Service#3">Finishing Touches</option>
+                                        <option value="Service#4">Cuts</option>
+					<option value="Service#5">Style, Perms, Blowouts</option>
+					<option value="Service#6">Coloring - Highlights</option>
+				</select><br><br>
+
+                                <table>
+					<tr>
+						<td>Select Service Type:</td>
+						<td><input type="radio" name="code" value="#1" checked>1</input></td>
+						<td><input type="radio" name="code" value="#2">2</input></td>
+						<td><input type="radio" name="code" value="#3">3</input></td>
+                                                <td><input type="radio" name="code" value="#4">4</input></td>
+                                                <td><input type="radio" name="code" value="other">Other</input></td>
+					</tr>
+				</table><br>
+
+                                Select Service Type:
+                                
+				
+				<table id="gender_tbl">
+					<tr>
+						<td>Select Gender:</td>
+						<td><input type="radio" name="gender" value="female" checked>Female</input></td>
+						<td><input type="radio" name="gender" value="male">Male</input></td>
+						<td><input type="radio" name="gender" value="other">Other</input></td>
+					</tr>
+				</table><br>
+				
+				Additional Notes:<br>
+				<textarea name="notes" rows="10" cols="30"></textarea><br>
+				
+				<input type="submit" value="Set Appointment"><input type="reset">
+			</form>
+		</div>
+		<div id="footer_div">
+			Contact Us: +1 (234) 456 - 7890 auroraspasalon@hotmail.com
+		</div>
+   </div>
+</html>
